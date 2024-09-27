@@ -1,16 +1,1 @@
-my_list = [5, 4, 3, 2, 1]
 
-my_tuple = ()
-
-
-for number in my_list:
-	if number % 2 == 0:
-		number = True
-		my_tuple += number,
-	else:
-		number = False
-		my_tuple += number,
-
-print(my_list)
-print(my_tuple)
-		 
