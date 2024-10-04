@@ -1,0 +1,16 @@
+0. //ul[@class='vl-flyout-nav__container']/li
+1. //ul[@class='x-refine__left__nav']/li/h3
+2. //ul[@class='x-refine__left__nav']/li/h3/div[text()="section_name_here"]
+3. //ul[@class='x-refine__left__nav']/li/h3/div[text()="section_name_here"]/../..//span[text()="checkbox_name_here"]
+4. //li[contains(@class, 's-item')]//div[@class='s-item__title']/span[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'item_name_here')]
+5. //div[@class='gh-submenu gh-eb-o']//a   (command+\)
+
+ADVANCED
+
+5. //li[contains(@class, 's-item')]//span[contains(@class, 's-item__price') and number(translate(text(), '$', '')) > 20 and number(translate(text(), '$', '')) < 200]/../../../..//span[contains(text(), "5.0 out of 5 stars.")]/../../../../../../..//span[contains(text(), "Free shipping & returns")]/../../../../../..//span[contains(@class, 'BOLD') and number(translate(text(), '% off', '')) > 20]/../../../../../../..
+
+OR
+
+//li[contains(@class, 's-item') and .//span[contains(@class, 's-item__price') and number(translate(text(), '$', '')) > 20 and number(translate(text(), '$', '')) < 200] and .//span[contains(text(), "5.0 out of 5 stars.")] and .//span[contains(text(), "Free shipping & returns")] and .//span[contains(@class, 'BOLD') and number(translate(text(), '% off', '')) > 20]]
+
+
